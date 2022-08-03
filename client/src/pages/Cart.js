@@ -3,11 +3,10 @@ import Header from "../parts/HomePage/Header";
 import Breadcrumb from "../components/Breadcrumb";
 import ShoppingCart from "../parts/Cart/ShoppingCart";
 import ShippingDetails from "../parts/Cart/ShippingDetails";
-
 import Footer from "../parts/HomePage/Footer";
 import Sitemap from "../parts/HomePage/Sitemap";
 
-export default function HomePage() {
+export default function Cart() {
     return (
         <>
             <Header />
