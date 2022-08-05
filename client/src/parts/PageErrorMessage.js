@@ -18,7 +18,7 @@ export default function PageErrorMessage({
                             to="/"
                             class="text-gray-900 bg-red-200 focus:outline-none w-full py-3 rounded-full text-lg focus:text-black transition-all duration-200 px-8 cursor-pointer"
                         >
-                            Back to Shop
+                            Back to Your Future
                         </Link>
                     </div>
                 </div>
