@@ -7,14 +7,12 @@ import Clients from "../parts/HomePage/Clients";
 import Sitemap from "../parts/HomePage/Sitemap";
 import Footer from "../parts/HomePage/Footer";
 
-import useScrollAnchor from "../helpers/hooks/useScrollAnchor";
-import useModalDOM from "../helpers/hooks/useModalDOM";
+import Document from "../parts/Document";
 
 export default function HomePage() {
-    useScrollAnchor()
-    useModalDOM()
+
     return (
-        <>
+        <Document>
             <Header theme="white" position="absolute" />
             <Hero />
             <BrowseRoom />
@@ -22,6 +20,6 @@ export default function HomePage() {
             <Clients />
             <Sitemap />
             <Footer />
-        </>
+        </Document>
     )
 }

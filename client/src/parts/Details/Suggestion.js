@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import '../../helpers/format/currency'
 
 export default function Suggestion({ data }) {
     return (
@@ -24,10 +26,10 @@ export default function Suggestion({ data }) {
                                         />
                                     </div>
                                     <h5 class="text-lg font-semibold mt-4">{item.title}</h5>
-                                    <span class="">IDR {item.price}</span>
-                                    <link to={`/categories/${item.idc}/products/${item.id}`} class="stretched-link">
+                                    <span class="">IDR {item.price.currency()}</span>
+                                    <Link to={`/categories/${item.idc}/products/${item.id}`} class="stretched-link">
 
-                                    </link>
+                                    </Link>
                                 </div>
                             </div>
                         )

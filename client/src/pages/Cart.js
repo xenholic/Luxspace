@@ -5,10 +5,11 @@ import ShoppingCart from "../parts/Cart/ShoppingCart";
 import ShippingDetails from "../parts/Cart/ShippingDetails";
 import Footer from "../parts/HomePage/Footer";
 import Sitemap from "../parts/HomePage/Sitemap";
+import Document from "../parts/Document";
 
 export default function Cart() {
     return (
-        <>
+        <Document>
             <Header />
             <Breadcrumb list={[
                 { url: "/", name: "Home" },
@@ -25,6 +26,6 @@ export default function Cart() {
             </section>
             <Sitemap />
             <Footer />
-        </>
+        </Document>
     )
 }

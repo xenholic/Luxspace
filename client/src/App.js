@@ -12,8 +12,9 @@ function App() {
       <div className="App">
         <Routes>
           <Route excact path="/" element={<HomePage />} />
-          <Route excact path="/categories/:idc" element={<Details />} />
-          <Route path="/categories/:idc/products/:idp" element={<Details />} />
+          <Route excact path="/categories/:idc" element={<Details />}>
+            <Route path="/categories/:idc/products/:idp" element={<Details />} />
+          </Route>
           <Route path="/cart" element={<Cart />} />
           <Route path="/congratulation" element={<Congratulation />} />
           <Route path="*" element={<NotFound />} />

@@ -4,9 +4,10 @@ import fetch from '../../helpers/fetch'
 import { Link } from 'react-router-dom'
 import Carousel from '../../components/Carousel'
 import { LoadingArrival } from '../../helpers/fetch/Loading'
+import '../../helpers/format/currency'
 
 export default function JustArrived() {
-  const { data, status, error, run, isLoading } = useAsync({})
+  const { data, error, run, isLoading } = useAsync({})
 
   const refContainer = useRef(null)
 
@@ -74,7 +75,7 @@ export default function JustArrived() {
                                 />
                               </div>
                               <h5 className="text-lg font-semibold mt-4">{item.title}</h5>
-                              <span className="">IDR {item.price}</span>
+                              <span className="">IDR {item.price.currency()}</span>
                               <Link to={`/categories/${item.idc}/products/${item.id}`} className="stretched-link">
 
                               </Link>
