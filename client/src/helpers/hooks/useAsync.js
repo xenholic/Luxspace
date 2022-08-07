@@ -37,7 +37,7 @@ export default function useAsync(initialState) {
 
     const setError = useCallback(() => {
         safeSetState({ error })
-    }, [safeSetState({ error })])
+    }, [])
 
     const reset = useCallback(() => {
         safeSetState(initialStateRef.current)
